@@ -1,0 +1,306 @@
+body {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.site-container {
+  width: 960px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.header {
+  background-color: cadetblue;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.tablet-header {
+  background-color: cadetblue;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.header-text {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-grow: 20;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+li {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.banner-container {
+  width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-pic {
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-position: top;
+  height: 30rem;
+  width: auto;
+  background-size: cover;
+}
+
+.main-pic-text {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+}
+
+.tablet-main-pic-text {
+  background-color: white;
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+  font-family: Helvetica;
+  font-size: 1.33rem;
+  font-weight: bold;
+}
+
+.main-pic-text h1 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-element {
+  display: flex;
+  height: 14rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+img.services {
+  width: 3.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  align-self: flex-start;
+}
+
+img.services2 {
+  width: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  align-self: flex-start;
+}
+
+.services-logo {
+
+}
+
+.services-text {
+  width: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.services-text2 {
+  width: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 1rem;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+h3 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  background-color: cadetblue;
+  width: 10rem;
+}
+
+.links {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+}
+
+.link-container {
+  width: 35%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link-container-spacer {
+  width: 5%;
+}
+
+.links-head {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.links-content {
+  background-color: white;
+  color: black;
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+img.footer {
+  height: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer-back {
+  background-color: azure;
+
+}
+
+.footer-container {
+  justify-content: left;
+  display: flex;
+}
+
+.footer-text {
+  display: flex;
+  color: black;
+  font-size: 1rem;
+  font-family: Helvetica;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .tablet-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .tablet-main-pic-text {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .site-container {
+    width: 100%;
+  }
+
+  .main-pic-text {
+    display: none;
+  }
+
+  .main-pic {
+    height: 22rem;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .header {
+    display: none;
+  }
+
+  .tablet-header {
+    display: none;
+  }
+
+  .main-pic {
+    height: 17rem;
+  }
+
+  .main-pic {
+    background-image: url("../../resources/images/glasses-bg.png");
+    background-position: 20%;
+  }
+
+  .banner-container {
+    width: 100%;
+  }
+
+  .main-pic-text {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 9rem;
+  }
+
+}
